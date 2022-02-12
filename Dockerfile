@@ -1,7 +1,8 @@
 FROM ubuntu:20.04
 # Alpine preferred but glibc is needed and popular workarounds don't do enough.
 
-ADD https://astuteinternet.dl.sourceforge.net/project/bacnet/bacnet-stack/bacnet-stack-1.0.0/bacnet-stack-1.0.0.tgz .
+#ADD https://astuteinternet.dl.sourceforge.net/project/bacnet/bacnet-stack/bacnet-stack-1.0.0/bacnet-stack-1.0.0.tgz .
+COPY ./bacnet-stack-1.0.0.tgz ./bacnet-stack-1.0.0.tgz
 ADD bacnet-wrapper /
 ADD simulator /
 
